@@ -20,7 +20,7 @@ func _ready() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	var entered : = false
 	for dir in inputs.keys():
-		if event.is_action_pressed(dir):
+		if event.is_action(dir):
 			current_dir = inputs[dir]
 			move(current_dir)
 	
