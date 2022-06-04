@@ -25,7 +25,7 @@ var rotation_amount = {  Vector2.RIGHT : 0,
 
 func _ready() -> void:
 	position = position.snapped(Vector2.ONE * tile_size)
-	position += Vector2.ONE * tile_size/2
+	position -= Vector2.ONE * tile_size/2
 	
 func _unhandled_input(event: InputEvent) -> void:
 	if curr_time >= time_btwn_moves:

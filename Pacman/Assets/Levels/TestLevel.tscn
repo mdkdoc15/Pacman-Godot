@@ -72,11 +72,203 @@ format = 1
 tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 65536, 0, 0, 65537, 1, 0, 65538, 1, 0, 65539, 1, 0, 65540, 1, 0, 65541, 1, 0, 65542, 1, 0, 65543, 1, 0, 65544, 1, 0, 65545, 1, 0, 65546, 1, 0, 65547, 1, 0, 65548, 1, 0, 65549, 1, 0, 65550, 1, 0, 65551, 0, 0, 131072, 0, 0, 131073, 1, 0, 131074, 0, 0, 131075, 0, 0, 131076, 1, 0, 131077, 0, 0, 131078, 1, 0, 131079, 0, 0, 131080, 1, 0, 131081, 0, 0, 131082, 0, 0, 131083, 1, 0, 131084, 0, 0, 131085, 0, 0, 131086, 1, 0, 131087, 0, 0, 196608, 0, 0, 196609, 1, 0, 196610, 0, 0, 196611, 0, 0, 196612, 1, 0, 196613, 0, 0, 196614, 1, 0, 196615, 1, 0, 196616, 1, 0, 196617, 1, 0, 196618, 0, 0, 196619, 1, 0, 196620, 0, 0, 196621, 0, 0, 196622, 1, 0, 196623, 0, 0, 262144, 0, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262148, 1, 0, 262149, 0, 0, 262150, 1, 0, 262151, 0, 0, 262152, 0, 0, 262153, 1, 0, 262154, 0, 0, 262155, 1, 0, 262156, 1, 0, 262157, 1, 0, 262158, 1, 0, 262159, 0, 0, 327680, 0, 0, 327681, 1, 0, 327682, 0, 0, 327683, 0, 0, 327684, 1, 0, 327685, 0, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327689, 1, 0, 327690, 0, 0, 327691, 1, 0, 327692, 0, 0, 327693, 0, 0, 327694, 1, 0, 327695, 0, 0, 393216, 0, 0, 393217, 1, 0, 393218, 0, 0, 393219, 0, 0, 393220, 1, 0, 393221, 0, 0, 393222, 1, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 1, 0, 393228, 0, 0, 393229, 0, 0, 393230, 1, 0, 393231, 0, 0, 458752, 0, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 1, 0, 458762, 1, 0, 458763, 1, 0, 458764, 1, 0, 458765, 1, 0, 458766, 1, 0, 458767, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 793, 287 )
+light_mask = 0
+position = Vector2( 800, 288 )
 collision_mask = 3
+
+[node name="Coinholder" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 720, 208 )
+
+[node name="Coin2" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 720, 144 )
+
+[node name="Coin7" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 720, 88 )
+
+[node name="Coin3" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 720, 336 )
+
+[node name="Coin4" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 720, 272 )
+
+[node name="Coin5" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 720, 472 )
+
+[node name="Coin6" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 720, 408 )
+
+[node name="Coin8" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 912, 208 )
+
+[node name="Coin9" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 912, 144 )
+
+[node name="Coin10" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 912, 88 )
+
+[node name="Coin11" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 912, 336 )
+
+[node name="Coin12" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 912, 272 )
+
+[node name="Coin13" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 912, 472 )
+
+[node name="Coin14" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 912, 408 )
+
+[node name="Coin15" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 536, 208 )
+
+[node name="Coin16" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 536, 144 )
+
+[node name="Coin17" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 536, 88 )
+
+[node name="Coin18" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 536, 336 )
+
+[node name="Coin66" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 592, 336 )
+
+[node name="Coin20" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 536, 472 )
+
+[node name="Coin22" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 408, 208 )
+
+[node name="Coin23" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 408, 144 )
+
+[node name="Coin24" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 408, 88 )
+
+[node name="Coin25" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 408, 336 )
+
+[node name="Coin26" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 408, 272 )
+
+[node name="Coin27" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 408, 472 )
+
+[node name="Coin28" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 408, 408 )
+
+[node name="Coin29" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 280, 208 )
+
+[node name="Coin30" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 280, 144 )
+
+[node name="Coin31" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 280, 88 )
+
+[node name="Coin32" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 280, 336 )
+
+[node name="Coin33" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 280, 272 )
+
+[node name="Coin34" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 280, 472 )
+
+[node name="Coin35" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 280, 408 )
+
+[node name="Coin36" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 88, 200 )
+
+[node name="Coin37" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 88, 136 )
+
+[node name="Coin38" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 88, 80 )
+
+[node name="Coin43" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 152, 80 )
+
+[node name="Coin44" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 216, 80 )
+
+[node name="Coin57" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 344, 80 )
+
+[node name="Coin58" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 472, 80 )
+
+[node name="Coin59" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 472, 208 )
+
+[node name="Coin60" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 592, 208 )
+
+[node name="Coin65" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 592, 272 )
+
+[node name="Coin61" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 464, 336 )
+
+[node name="Coin62" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 464, 464 )
+
+[node name="Coin63" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 336, 464 )
+
+[node name="Coin64" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 848, 272 )
+
+[node name="Coin45" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 600, 80 )
+
+[node name="Coin46" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 664, 80 )
+
+[node name="Coin47" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 792, 80 )
+
+[node name="Coin48" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 856, 80 )
+
+[node name="Coin49" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 784, 464 )
+
+[node name="Coin50" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 848, 464 )
+
+[node name="Coin51" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 600, 464 )
+
+[node name="Coin52" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 664, 464 )
+
+[node name="Coin53" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 152, 464 )
+
+[node name="Coin54" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 216, 464 )
+
+[node name="Coin55" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 152, 280 )
+
+[node name="Coin56" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 216, 280 )
+
+[node name="Coin39" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 88, 328 )
+
+[node name="Coin40" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 88, 264 )
+
+[node name="Coin41" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 88, 464 )
+
+[node name="Coin42" parent="Coinholder" instance=ExtResource( 5 )]
+position = Vector2( 88, 400 )
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
 position = Vector2( 283, 97 )
-
-[node name="Coin" parent="." instance=ExtResource( 5 )]
-position = Vector2( 732, 131 )

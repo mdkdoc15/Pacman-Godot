@@ -15,7 +15,7 @@ var curr_time :  = 0.0
 
 func _ready():
 	position = position.snapped(Vector2.ONE * tile_size)
-	position += Vector2.ONE * tile_size/2
+	position += Vector2(1, -1) * tile_size/2
 	yield(get_tree(), "idle_frame")
 	var tree = get_tree()
 	if tree.has_group("LevelNavigation"):
@@ -62,4 +62,4 @@ func move():
 
 
 func _on_Enemy_area_entered(area: Area2D) -> void:
-	queue_free() #TODO add Game over here
+	get_tree().change_scene("res://Assets/Screens/GameOVerScreen.tscn")
