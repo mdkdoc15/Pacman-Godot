@@ -1,12 +1,15 @@
 extends Area2D
 # Tile based movement found at https://kidscancode.org/godot_recipes/2d/grid_movement/
 onready var ray : RayCast2D = $RayCast2D
-
+onready var sprite : Sprite = $Icon
+export var time_btwn_moves : float = .2
 
 
 export var tile_size: = 64
 
 var current_dir = Vector2.ZERO
+
+var curr_time : float = 0
 
 var inputs = { "right" : Vector2.RIGHT,
 			"left" : Vector2.LEFT,
@@ -25,11 +28,16 @@ func _ready() -> void:
 	position += Vector2.ONE * tile_size/2
 	
 func _unhandled_input(event: InputEvent) -> void:
-	for dir in inputs.keys():
-		if event.is_action(dir):
-			current_dir = inputs[dir]
-			move(current_dir)
+	if curr_time >= time_btwn_moves:
+		curr_time = 0
+		for dir in inputs.keys():
+			if event.is_action(dir):
+				current_dir = inputs[dir]
+				move(current_dir)
 	
+	
+func _physics_process(delta: float) -> void:
+	curr_time += delta
 	
 
 func move(dir : Vector2) -> void:
@@ -37,5 +45,5 @@ func move(dir : Vector2) -> void:
 	ray.force_raycast_update()
 	if !ray.is_colliding():
 		position += dir * tile_size
-		rotation = rotation_amount[dir]		# Point pacman in the right direction
+		sprite.rotation = rotation_amount[dir]		# Point pacman in the right direction
 		
