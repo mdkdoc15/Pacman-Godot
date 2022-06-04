@@ -25,7 +25,6 @@ func _ready() -> void:
 	position += Vector2.ONE * tile_size/2
 	
 func _unhandled_input(event: InputEvent) -> void:
-	var entered : = false
 	for dir in inputs.keys():
 		if event.is_action(dir):
 			current_dir = inputs[dir]
@@ -34,9 +33,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	
 
 func move(dir : Vector2) -> void:
-	ray.cast_to = dir * tile_size 	# Cast ray
-	ray.force_raycast_update() 				# Force ray to cast this frame
-	if !ray.is_colliding(): 					# Check for collision
+	ray.cast_to = dir * tile_size
+	ray.force_raycast_update()
+	if !ray.is_colliding():
 		position += dir * tile_size
 		rotation = rotation_amount[dir]		# Point pacman in the right direction
 		
